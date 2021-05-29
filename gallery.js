@@ -35,17 +35,20 @@ function createGalleryItem(galleryItem) {
 
 function onGalleryContainerClick(event) {
   event.preventDefault();
-  if (event.target.classList.contains("gallery__item")) {
-    return event.target.dataset.source;
+  if (!event.target.classList.contains("gallery__image")) {
+    return;
   }
   refs.modalWindow.classList.add("is-open");
   refs.currentImage.src = event.target.dataset.source;
+  refs.currentImage.alt = event.target.dataset.alt;
+
   window.addEventListener("keydown", onEscClick);
 }
 function onCloseButtonClick() {
   window.removeEventListener("keydown", onEscClick);
   refs.modalWindow.classList.remove("is-open");
   refs.currentImage.src = "";
+  refs.currentImage.alt = "";
 }
 function onOverlayClick(event) {
   if (event.currentTarget === event.target) {
