@@ -40,8 +40,7 @@ function onGalleryContainerClick(event) {
   }
   refs.modalWindow.classList.add("is-open");
   refs.currentImage.src = event.target.dataset.source;
-  refs.currentImage.alt = event.target.dataset.alt;
-
+  refs.currentImage.alt = event.target.alt;
   window.addEventListener("keydown", onEscClick);
 }
 function onCloseButtonClick() {
