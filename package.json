@@ -1,0 +1,19 @@
+{
+  "name": "goit-js-hw-08-gallery",
+  "description": "homework 10",
+  "version": "1.0.0",
+  "main": "gallery-items.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daria-Valitskaya/goit-js-hw-08-gallery.git"
+  },
+  "author": "Valickaya Daria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daria-Valitskaya/goit-js-hw-08-gallery/issues"
+  },
+  "homepage": "https://github.com/Daria-Valitskaya/goit-js-hw-08-gallery#readme"
+}

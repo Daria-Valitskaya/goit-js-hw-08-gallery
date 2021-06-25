@@ -42,9 +42,11 @@ function onGalleryContainerClick(event) {
   refs.currentImage.src = event.target.dataset.source;
   refs.currentImage.alt = event.target.alt;
   window.addEventListener("keydown", onEscClick);
+  window.addEventListener("keydown", onRigthLeftClick);
 }
 function onCloseButtonClick() {
   window.removeEventListener("keydown", onEscClick);
+  window.removeEventListener("keydown", onRigthLeftClick);
   refs.modalWindow.classList.remove("is-open");
   refs.currentImage.src = "";
   refs.currentImage.alt = "";
@@ -59,3 +61,20 @@ function onEscClick(event) {
     onCloseButtonClick();
   }
 }
+// function onRigthLeftClick(event) {
+//   const getLinksOnImg = (gallery) => {
+//     gallery.map((image) => {
+//       image.original;
+//     });
+//     if (event.code === "ArrowRight") {
+//     }
+//     if (event.code === "ArrowLeft") {
+//     }
+//   };
+// }
+// const getLinksOnImg = (cardsItems) => {
+//   return cardsItems.map((image) => {
+//     image.original;
+//   });
+// };
+// console.log(getLinksOnImg(cardsItems));
