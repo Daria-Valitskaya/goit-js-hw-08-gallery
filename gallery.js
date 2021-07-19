@@ -42,11 +42,11 @@ function onGalleryContainerClick(event) {
   refs.currentImage.src = event.target.dataset.source;
   refs.currentImage.alt = event.target.alt;
   window.addEventListener("keydown", onEscClick);
-  window.addEventListener("keydown", onRigthLeftClick);
+  // window.addEventListener("keydown", onRigthLeftClick);
 }
 function onCloseButtonClick() {
   window.removeEventListener("keydown", onEscClick);
-  window.removeEventListener("keydown", onRigthLeftClick);
+  // window.removeEventListener("keydown", onRigthLeftClick);
   refs.modalWindow.classList.remove("is-open");
   refs.currentImage.src = "";
   refs.currentImage.alt = "";
